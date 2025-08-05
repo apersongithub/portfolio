@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      
+    }
+
+    body {
+      font-family: Verdana;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    a {
+      color: #FF8A50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .about {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 650px;
+      margin: 0 auto 60px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+        border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #FF5722;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .event {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+
+    .event:nth-child(odd) {
+      left: 0;
+    }
+
+    .event:nth-child(even) {
+      left: 50%;
+    }
+
+    .event-content {
+      background: #1e1e1e;
+      padding: 15px 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+      position: relative;
+      z-index: 2;
+    }
+
+    .event::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #121212;
+      border: 4px solid #FF5722;
+      border-radius: 50%;
+      top: 30px;
+      z-index: 3;
+    }
+
+    .event:nth-child(odd)::after {
+      right: -10px;
+    }
+
+    .event:nth-child(even)::after {
+      left: -10px;
+    }
+
+    .event h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .icons i {
+      font-size: 46px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .event {
+        width: 100%;
+        left: 0 !important;
+        text-align: left !important;
+        padding: 20px;
+      }
+
+      .event::after {
+        left: -10px !important;
+        right: auto !important;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="about">
+    <h2>ABOUT ME - RETIRED (for the most part)</h2>
+    <img src="https://avatars.githubusercontent.com/u/72956230?s=400&u=6d2fdeeb4b8133bc05e5d07ee5368502241ee5b6&v=4" alt="Profile picture" width="100" height="100" style="border-radius: 50px; display: block; margin-bottom: 20px;">
+    <p>I’ve been obsessed with computers since I was six. My first real interest wasn't actually programming it was Media:
+      editing videos, making thumbnails, uploading random stuff on YouTube. That felt creative. </p>
+    <p>I eventually got into programming at 12, mostly out of curiosity. I was self-taught with mostly just the Mozilla docs. No YouTube. No tutorials. So I didn’t learn the “right”
+      way just trial, error, and googling everything. That led to some cool wins, some spaghetti code, and a lot of
+      headaches... literally.</p>
+    <p>My focus now is shifting I might go back to media, because I don't get headaches or whatever there, and I actually enjoy it more.</p>
+  </section>
+
+
+  <div class="timeline">
+    <div class="event">
+      <div class="event-content">
+        <h3><a href="https://www.roblox.com/games/5928111966/Randomizer-Battle-Beta-v0-3" target="_blank">2020 —
+  Randomizer Battle</a></h3>
+        <div class="icons"><i class="devicon-lua-plain colored" style="color: #5656af;"></i></div>
+        <p>My first real game where I didn’t just spam free models. A random-weapons PvP game built on Roblox.</p>
+        <p>A lot of the code was based on others, but I still had to understand and modify it. This is the moment where I count my
+real dev journey starting.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3>Nov 2021 — Moderation Discord Bot</h3>
+        <div class="icons"><i class="devicon-nodejs-plain colored"></i></div>
+        <p>Built a Discord bot with simple moderation commands. Used someone else's template though.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content" style="border: 4px solid #FFD700;padding: 16px;border-radius: 8px;box-shadow: 0 0 12px #FFD700, 0 0 24px #FFA5;">
+        <h3><a href="https://github.com/apersongithub/MHTML-V3" target="_blank">2021–2023 — MHTML v1-v3</a></h3>
+        <div class="icons">
+<i class="devicon-html5-plain colored"></i>
+<i class="devicon-css3-plain colored"></i>
+<i class="devicon-javascript-plain colored"></i>
+<i class="devicon-nodejs-plain colored"></i>
+        </div>
+        <p>This was probably the most impactful project I ever made. I ran a proxy/games/emulator site for about 2 years.</p>
+        <p>The code was mostly spaghetti, but it worked. We hit over 200,000 views, and hundreds of daily users. 
+          <p>I couldn’t
+monetize it because I was young and didn't know how, all of the freenom domains went down eventually, and Google deleted my analytics so no real proof remains except for
+a <a href="https://www.youtube.com/watch?v=MjYxxQAzw08" target="_blank">YouTube</a> video with 100K views. I might have a picture of the analytics somewhere in my phone.</p>
+        <p>I tried to make a V4, but lost motivation. I realized I’d have to catch up on years of bypasses and new
+methods. Probably best to move on. Also, not sure if it was technically legal lol.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3><a href="https://github.com/apersongithub/ABS-X/" target="_blank">Sep 2022 — ABS‑X Bot</a></h3>
+        <div class="icons"><i class="devicon-python-plain colored"></i></div>
+        <p>A bot that farms Microsoft Rewards using Selenium.</p> <p>Honestly, Python wasn't too hard I didn’t need tutorials, just documentation. Maintained it for about 3 months before stopping.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3><a href="https://github.com/apersongithub/Windows-Notepad-HTML/" target="_blank">Nov 2022 — Windows Notepad
+  in HTML</a></h3>
+        <div class="icons"><i class="devicon-html5-plain colored"></i></div>
+        <p>Rebuilt the Windows Notepad app using HTML and JS.<p></p> Nothing huge, but it was probably the cleanest code I had
+written at the time.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3>Late 2022–2023 — Java & C++ Attempts</h3>
+        <div class="icons">
+<i class="devicon-java-plain colored"></i>
+<i class="devicon-cplusplus-plain colored"></i>
+        </div>
+        <p>I genuinely wanted to learn Java and C++, but it just never clicked the way other things did. ADHD didn’t
+help.</p> <p>I'd often start learning, then take long breaks and forget everything. Still, I played around with
+Minecraft launchers and gained some understanding.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3><a href="https://github.com/apersongithub/discord-themes" target="_blank">Mar 2023 — Discord Themes</a></h3>
+        <div class="icons"><i class="devicon-javascript-plain colored"></i></div>
+        <p>Made a user script to enable free Discord themes without Nitro.</p> <p>It was pretty bad, so I ended up just
+linking people to a better version.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3><a href="https://github.com/apersongithub/Revert-YouTube-UI" target="_blank">Sep 2023 — Revert YouTube UI</a></h3>
+        <div class="icons"><i class="devicon-javascript-plain colored"></i></div>
+        <p>YouTube was testing a new UI and I hated it. So I made an extension to bring the old layout back.</p> <p>This was the
+first time I ever got donations. That felt awesome.</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3>Late 2024 — Private User Scripts</h3>
+        <div class="icons"><i class="devicon-javascript-plain colored"></i></div>
+        <p>Stopped publishing stuff. Mostly just made simple tweaks to websites for myself—UI fixes, redirecting links,
+etc.</p> <p>I was getting burnt out. Most of the time I code, I get legit headaches, especially when stuck on a bug.
+That’s not how it should feel, right?</p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="event-content">
+        <h3><a href="https://github.com/apersongithub/Duolingo-Unlimited-Hearts" target="_blank">Aug 2025 — Duolingo
+  Unlimited Hearts Extension</a></h3>
+        <div class="icons"><i class="devicon-javascript-plain colored"></i></div>
+        <p>Duolingo removed unlimited lives for school accounts. I went full “reverse engineer mode” and figured out how
+to patch it.</p> <p>Took a full day and reminded me why I stopped coding. Headaches, annoyance, and frustration. I used a
+lot of AI to transfer it to an extension to be honest.</p> <p>If you asked me to make a website today, I probably couldn’t even make a button
+without ChatGPT. I lost pretty much most of my knowledge during my hiatus.</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
